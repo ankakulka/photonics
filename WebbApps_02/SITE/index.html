@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photonics Group</title>
+
+<!-- BOOTSTRAP CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu:400,700" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav class="navbar">
+       <div class="container">
+     <!-- start collapsed navbar -->
+      <div class="navbar-header">
+      <a href='index.html' class="navbar-brand"><span id="brand">NTU PHOTONICS RESEARCH GROUP</span></a> 
+               <form class="form-inline" id="top_search">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+                <button 
+          type="button" 
+          class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#main_navbar"
+          aria-expanded="false">
+          <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div> <!--- end of collapsed navbar -->
+
+        <!-- start uncollapsed navbar -->
+        <div class="collapse navbar-collapse" 
+        id="main_navbar">
+
+
+              <ul class="nav navbar-nav navbar-right">
+            
+                <li class="active"><a href="index.html">main</a></li>
+                <li><a href="staff.html">staff profiles</a></li>
+                <li><a href="facilities.html">facilities</a></li>
+            </ul>
+            </div>
+      </div> <!-- container -->
+    </nav>
+
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-sm-12">
+
+<h1> LASER-PLASMON </h1>
+ <h3 id="intro">Laser Manipulation of Plasmonic Nanostructures </h3>
+
+<blockquote>The Laser Photonics Research Group at Nottingham Trent University group has developed a range of new materials which have applications in the development of photo-electronic devices for use in advanced electronics. <br>
+<strong>Use the form provided to search for the new materials developed by the group.</strong>
+</blockquote>
+
+
+
+
+<a href="photonics_proces_05.html">
+<img src="img/title.png" class="img-fluid" style='width:100%; padding: 2% 5% 2% 0%;' alt="photonics group video introduction">
+</a>
+
+<p><strong>Plasmonics</strong> has developed into a rapidly maturing and broad research field, and it is progressively becoming an enabling technology for a number of forefront research areas like photovoltaics, chemical and biological sensing, medical therapy, information technology and others.<br> However the fabrication of plasmonic devices is technically challenged because: 
+<ul>
+<li>a technique for precise control over the plasmon features has not been developed yet </li>
+<li> an engineering difficulty of delivering sharp nano-sized interfaces between metal and dielectrics 
+<li>a lack of simultaneous atomic-scale control and large-scale character</li>
+<li>current literature is lacking a systematic experimental study </li>
+</ul>
+which creates a lack of feedback to technology for successful plasmonic large-scale applications. </p>
+<p>This project aims to address the hurdles mentioned above, through a wise implementation of a processing technique that can be easily adopted in industry. This technique is <strong>Laser Annealing (LA)</strong>, the process of irradiating a material to instantly alter its structure and properties. <br>LA has already been demonstrated to be a viable method for creating plasmonic systems, but with this project we aim at materialising its potential as a highly promising innovation in the field of plasmonics. </p>
+
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-sm-12" id="form">
+<form>
+
+
+<!--   <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div> -->
+  <!-- <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div> -->
+  <div class="form-group">
+
+  <h3 id="formtitle">search for materials </h3>
+  <legend>Select base type</legend>
+    <label for="exampleSelect1">1.Select layer thickness</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>5</option>
+      <option>10</option>
+      <option>15</option>
+      <option>20</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect2"> 2.Select base metal </label>
+    <select class="form-control" id="exampleSelect2">
+      <option>gold</option>
+      <option>silver</option>
+      <option>aluminium</option>
+      </select>
+  </div>
+
+ <fieldset class="form-group">
+    <legend> Select laser processing type</legend>
+
+<label>3. Fluence (1-15) </label>
+
+<input name="gdskill[1]" class="slider-bar" id="gdskill1" type="range" min="1" value="0" max="15" step="1" list="ticks" oninput="Output1.value = gdskill1.value" /><br />
+<output id="Output1" class="output">0</output>
+
+<datalist id="ticks">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+</datalist>
+</fieldset>
+
+ <fieldset class="form-group">
+  <label>4. Number of pulses (1-15)</label>
+
+
+<input name="gdskill[2]" id="gdskill2" type="range" min="0" value="0" max="10" step="1" list="ticks" oninput="Output2.value = gdskill2.value"/><br/>
+<output id="Output2" class="output">0</output>
+
+<datalist id="ticks">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+</datalist>
+
+</fieldset>
+   <button type="submit" class="btn btn-primary">SUBMIT</button>
+</form>
+<canvas id="myChart" width="300" height="300"></canvas>
+
+</div>
+</div>
+</div>
+
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-sm-10">
+<form>
+  <div class="form-group" id="search">
+    <!-- <label for="formGroupExampleInput">Search</label> -->
+   <!--  <span class="glyphicon glyphicon-search"> </span> -->
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="search">
+  </div>
+</form>
+</div>
+</div>
+</div>
+
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ["1", "2", "3", "4", "5","6", "7", "8", "9", "10", "11","12","13","14","15" ],
+        datasets: [{
+            label: "REFLECTANCE",
+            backgroundColor: 'rgb(218, 94, 89)',
+            borderColor: 'rgb(218, 94, 89)',
+            data: [0,0.5, 1, 3.5, 5.5,  6,6.2, 6.7, 8, 10, 11.2, 12, 13, 14, 14.4, 15],
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+
+
+</script>
+</body>
+</html>

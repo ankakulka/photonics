@@ -1,0 +1,186 @@
+/* COLORS
+
+coral #DA5E59
+navy  #1F0B24
+lightblue #D0C8F0
+
+*/
+
+/* TEXT STYLING*/
+
+h1 {
+		color: #DA5E59;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#formtitle {
+  font-weight: 700;
+  color:#DA5E59 ;
+  text-transform: uppercase;
+
+}
+
+#brand {
+
+		/*color: #D0C8F0;*/
+    color: #E6E6E6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+		background-color: #1F0B24;
+		border-radius: 0;
+	}
+
+#main_navbar>ul>li>a {
+		/*color: #D0C8F0;*/
+     color: #E6E6E6;
+}
+
+#main_navbar>ul>li:active>a, #main_navbar>ul>li:hover>a {
+  background-color: #DA5E59;
+}
+
+
+
+footer {
+		background-color: #1F0B24;
+		width:100%;
+        
+  		/*height: 8%; 
+  
+  		bottom:0;
+ 		left:0;*/
+
+}
+
+
+
+
+/*FORM STYLING*/
+
+#form {
+	background-color: #E6E6E6;
+	border-color: #E6E6E6;
+	/*padding: 2%;*/
+ padding-top: 2.5%;
+}
+
+.btn-primary {
+		background-color: #DA5E59;
+		border-color: #DA5E59;
+    margin: 5%;
+    padding: 5%;
+
+}
+
+#search {
+		padding: 1%;
+}
+
+legend {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+}
+
+label {
+  padding: 2.5%;
+}
+
+#top_search {
+  padding-bottom: 2.5%;
+}
+
+/*SLIDER STYLING*/
+
+.output {
+  width: 100%;
+  margin-left: 50%;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  height:5px;
+  width:100%;
+  cursor: pointer;
+  background: #1F0B24;
+  margin-bottom: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #1F0B24;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+
+/*STAFF LIST*/
+
+ul, #myList {
+  list-style-type: none;
+
+}
+
+.staff_photo {
+
+  margin: 2%;
+  float: left;
+}
+
+.bold {
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+
+}
+
+.staff_name {
+font-family: 'Ubuntu', sans-serif;
+font-weight: 700;
+font-size: 30px;
+
+}
+
+.staff_name>a {
+color: #DA5E59;
+}
+
+.img-responsive {
+  margin: 2%;
+}
+
+.last-name {
+  visibility: hidden;
+  font-size: 20px;
+}
+
+#myChart {
+ 
+  background-color: white;
+}
+
+.searchfunc {
+  color: #e2e2e2;
+  font-weight: bold;
+}
+
+
+.img-fluid {
+max-width: 100%;
+height: auto;
+padding: 2.5%;
+  
+}
